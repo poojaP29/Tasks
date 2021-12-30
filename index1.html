@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing:border-box;
+                font-family:Verdana;
+                font-size:20px;
+            }
+            
+            
+        
+            .header
+            {
+                
+                margin-bottom: 0px;
+                padding: 55px;
+                background:#67a2d3;
+                text-align:center;
+            }
+            .container {
+                
+                text-align: center;
+                display:flex;
+                flex-wrap:wrap;
+            }
+
+             .feature1{
+                      background-color: #e08a50;
+                       padding:30px;
+                       height:200px;
+                       flex:33%;
+                       flex-wrap: wrap;
+                       text-align:center;
+                       background-image:url("image/cat.jpeg" ) ;
+                       background-size:310px;
+                       
+                    }
+
+             .feature2
+             {
+                  background-color: rgb(170, 165, 209);
+                  padding: 30px;
+                  height:200px;
+                  flex:33%;
+                  flex-wrap:wrap;
+                  text-align:center;
+                  background-image:url("image/cat.jpeg" ) ;
+                  background-size:310px;
+                  
+
+                  
+             }
+             .feature3
+             {
+                 background-color:#e63b57 ;
+                 padding:30px;
+                 height:200px;
+                 flex:33%;
+                 flex-wrap: wrap;
+                 text-align:center;
+                 background-image:url("image/cat.jpeg" ) ;
+                  background-size:310px;
+                 
+             }
+
+            .navigation{
+                height: 50px;
+                background-color: tomato;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            } 
+            nav{
+                background-image: url(./spriteimage.svg) ;
+                float: right;
+                width: 200px;
+                background-position:0px 45px ;
+                height: 60px;
+            }
+            
+            .signup
+            {
+                margin-bottom:0px ;
+                padding: 20px;
+                background:#88b7bd;
+                text-align:center;
+               
+            }
+            .content
+            {
+                margin-bottom: 0px;
+                padding:50px;
+                background:#817676;
+                text-align:center;
+            }
+            @media screen and(min-width:320px)and(max-width:480px)
+            {
+                .feature1,.feature2,.feature3,.signup{
+                    flex:100%;
+                }
+            @media screen and(min-width:481px)and(max-width:768px)
+                {
+                .feature1,.feature2,.feature3,.signup{
+                    flex:50%;
+                }
+                
+                .signup
+                {
+                    flex:50%;
+                    background-color: #e08a50;
+                }
+            }
+
+                
+            }
+             </style>
+    </head>
+    <body>
+        <div class="navigation">
+            <nav></nav>
+        </div>
+
+        
+        
+
+    
+        <div class="header">[HEADER] </div>
+        
+        <div class="container">
+              <div class="feature1" ></div>
+
+              <div class="feature2"></div>
+              <div class="feature3"></div>
+        </div>
+            <div class="signup">[SIGNUP]</div>
+            <div class="content">[CONTENT]</div>
+
+    </body>
+</html>
