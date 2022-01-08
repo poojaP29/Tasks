@@ -10,6 +10,9 @@
                 font-family:Verdana;
                 font-size:20px;
             }
+            
+            
+        
             .header
             {
                 
@@ -24,27 +27,33 @@
                 display:flex;
                 flex-wrap:wrap;
             }
-            .featureRight
-            {
+
+             .featureLeft{
                       background-color: #e08a50;
                        padding:30px;
-                       height:200px;
+                       height:400px;
+                       width:300px;
                        flex:33%;
                        flex-wrap: wrap;
                        text-align:center;
                        background-image:url("image/cat.jpeg" ) ;
-                       background-size:310px;
-            }
-            .featureCentre
+                       background-repeat: no-repeat;
+                       
+                       
+                    }
+
+             .featureCenter
              {
                   background-color: rgb(170, 165, 209);
                   padding: 30px;
-                  height:200px;
+                  height:400px;
+                  width:300px;
                   flex:33%;
                   flex-wrap:wrap;
                   text-align:center;
                   background-image:url("image/cat.jpeg" ) ;
-                  background-size:310px;
+                  background-repeat: no-repeat;
+                  
                   
 
                   
@@ -53,12 +62,14 @@
              {
                  background-color:#e63b57 ;
                  padding:30px;
-                 height:200px;
+                 height:400px;
+                 width:300px;
                  flex:33%;
                  flex-wrap: wrap;
                  text-align:center;
                  background-image:url("image/cat.jpeg" ) ;
-                  background-size:310px;
+                 background-repeat: no-repeat;
+                
                  
              }
 
@@ -69,7 +80,7 @@
                 border-radius: 20px;
             } 
             nav{
-                background-image: url(./spriteimage.svg) ;
+                background-image: url("./image/spriteimage.svg") ;
                 float: right;
                 width: 200px;
                 background-position:0px 45px ;
@@ -93,12 +104,12 @@
             }
             @media screen and(min-width:320px)and(max-width:480px)
             {
-                .feature1,.feature2,.feature3,.signup{
+                .featureLeft,.featureCenter,.featureRight,.signup{
                     flex:100%;
                 }
             @media screen and(min-width:481px)and(max-width:768px)
                 {
-                .feature1,.feature2,.feature3,.signup{
+                .featureLeft,.featureCenter,.featureRight,.signup{
                     flex:50%;
                 }
                 
@@ -108,19 +119,20 @@
                     background-color: #e08a50;
                 }
             }
+
+                
             }
-             </style>
+            </style>
     </head>
     <body>
         <div class="navigation">
             <nav></nav>
         </div>
         <div class="header">[HEADER] </div>
-        
         <div class="container">
-              <div class="feature1" ></div>
-              <div class="feature2"></div>
-              <div class="feature3"></div>
+              <div class="featureLeft" ></div>
+              <div class="featureCenter"></div>
+              <div class="featureRight"></div>
         </div>
             <div class="signup">[SIGNUP]</div>
             <div class="content">[CONTENT]</div>
