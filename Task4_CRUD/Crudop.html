@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operations</title>
+    <link rel="stylesheet" href="Crudop.css">
+</head>
+<div class = "header">
+<h2>Student's Registration</h2></div>
+<div></div>
+<body>
+    <table>
+        <tr>
+            <td>
+                <!-- CRUD operations-->
+                <form onsubmit="event.preventDefault(); onFormsubmit();" autocomplete="off">
+                    
+                    <div>
+                        <label>Student Name*</label><label class ="validation-error hide" id="fullnameValidationError">This Field is Required</label>
+                        <input type="text" name="fullname" id="fullname" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" />
+                    </div>
+                    
+                    <div>
+                        <label>Reg No</label>
+                        <input type="number" name="regno" id="regno"  >
+                    </div>
+                    
+                    <div>
+                        <label>Date Of Birth</label>
+                        <input type="date" name="dob" id="date">
+                    </div>
+                    <br>
+                    <div id="gender">
+                        <label>Gender</label>
+                        
+                        <input type="radio"  value="female" name="gender" >
+                        Female</label>
+
+                        <label>
+                        <input type="radio"  value = "male" name="gender">
+                        Male</label>
+                            
+                        <label>
+                        <input type="radio" value="others" name="gender">
+                        Others</label>
+
+                    </div>
+                    <br>
+                    <div>
+                        <label>place </label>
+                        <input type="text" name="place" id="place" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" />
+                    </div>
+                    
+                    <div>
+                        <label>Percentage</label>
+                        <input type="percent" name="percentage" id="percentage">
+                    </div>
+                    <div id="hobbies" >
+                        <label>Hobbies</label>
+                        <br>
+                        <label>
+                            <input type="checkbox" value="reading" name="hobbies">Reading
+                        </label><br>
+                        <label>
+                            <input type="checkbox" value="gardening" name="hobbies">Gardening
+                        </label><br>
+                        <label>
+                            <input type="checkbox" value="playing" name="hobbies">Playing
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Mail id</label>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="tel" name="number" id="number" placeholder="123-456-7890"  >
+                    </div>
+                    
+                    
+                    <div
+                        class="form-action-buttons"></div>
+                        <input type="submit" value="SUBMIT">
+                    </div>
+                    
+                </form>
+
+            </td>
+            <td>
+            <!--Recorded list-->
+            <table class ="list" id="studentList">
+                
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Reg No</th>
+                        <th>Date Of Birth</th>
+                        <th>Gender</th>
+                        <th>place</th>
+                        <th>Percentage</th>
+                        <th>Hobbies</th>
+                        <th>mail id</th>
+                        <th>Phone number</th>
+                        <th></th>
+                        </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            
+
+            </td>
+        </tr>
+    </table>
+    <script src="Crudop.js"></script>
+    
+    
+</body>
+</html>
+
+
+
