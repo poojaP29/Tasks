@@ -4,9 +4,9 @@ function onFormsubmit(){
     if (validate()){
         let formData = readFormData();
         if(selectedRow == null)
-        insertNewRecord(formData);
+          insertNewRecord(formData);
         else
-        updateRecord(formData);
+          updateRecord(formData);
         resetForm();
     }
 }
